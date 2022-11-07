@@ -5,7 +5,7 @@ import random
 import altair as alt
 import numpy as np
 import pandas as pd
-df = pd.read_csv("/Users/joasyepidan/Documents/Fall2022/VisualAnalytics-5122/5122_sl/resources/US Police shootings in from 2015-22.csv")
+df = pd.read_csv("police_shooting.csv")
 #Death by race
 death_by_race = df.groupby("race", as_index=False)["name"].count()
 #header
